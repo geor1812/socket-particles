@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mandatory 1</title>
+</head>
+<body>
+    <div class="navbar">
+        <p class="nav-item">Background color:</p>
+        <input class="nav-item" type="color" id="bgColor" value="#000000">
+        <p class="nav-item">Particle color:</p>
+        <input class="nav-item" type="color" id="particleColor" value="#ffffff">
+        <p class="nav-item">Particle amount:</p>
+        <input class="nav-item" style="color:black; width: 50px;" type="number" id="pAmount" value="300">
+        <p class="nav-item">Bounce:</p>
+        <input class="nav-item" style="margin-top: 20px;" type="checkbox" id="bounce"> 
+        <p class="nav-item">Type:</p>
+        <select name="type" id="type">
+            <option value="blob">Blob</option>
+            <option value="trail">Trail</option>    
+        </select>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="/socket.io/socket.io.js"></script>
+    <script language="javascript" src="canvas.js"></script>
+    <script language="javascript" src="models/Particle.js"></script>
+    <script language="javascript" src="socket.js"></script>
+</body>
+</html>
